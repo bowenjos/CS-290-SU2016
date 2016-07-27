@@ -7,8 +7,12 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :wq
+:q
 :;wq
 :q!
 :'<,'>>
@@ -16,7 +20,6 @@
 :'<,'>
 :set expandtab
 :set tabstop=2 softtabstop=2
-:q
 :set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 # Search String History (newest to oldest):
@@ -28,7 +31,7 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
+""0	LINE	0
 	router.get('/form',function(req,res){
 	   var qParams = [];
 	   for(var p in req.query){
@@ -50,7 +53,6 @@
 	   context.dataList = qParams;
 	   res.render('form-post', context);
 	});
-	
 "1	LINE	0
 	
 "2	LINE	0
@@ -69,22 +71,24 @@
 	a
 
 # File marks:
-'0  43  6  ~/final-node/views/tablepage.handlebars
-'1  1  0  ~/final-node/views/tablepage.handlebars
-'2  100  0  ~/final-node/final.js
-'3  112  0  ~/final-node/final.js
-'4  1  0  ~/final-node/final.js
-'5  3  0  ~/hello-node/app.js
-'6  16  10  ~/hello-node/app.js
-'7  102  2  ~/final-node/final.js
-'8  35  37  ~/form-node/forms.js
-'9  37  6  ~/form-node/forms.js
+'0  1  0  ~/final-node/views/tablepage.handlebars
+'1  111  0  ~/final-node/final.js
+'2  1  0  ~/final-node
+'3  43  6  ~/final-node/views/tablepage.handlebars
+'4  100  0  ~/final-node/final.js
+'5  112  0  ~/final-node/final.js
+'6  1  0  ~/final-node/final.js
+'7  3  0  ~/hello-node/app.js
+'8  16  10  ~/hello-node/app.js
+'9  102  2  ~/final-node/final.js
 
 # Jumplist (newest first):
--'  43  6  ~/final-node/views/tablepage.handlebars
 -'  1  0  ~/final-node/views/tablepage.handlebars
--'  100  0  ~/final-node/final.js
+-'  111  0  ~/final-node/final.js
 -'  1  0  ~/final-node/final.js
+-'  1  0  ~/final-node
+-'  43  6  ~/final-node/views/tablepage.handlebars
+-'  100  0  ~/final-node/final.js
 -'  112  0  ~/final-node/final.js
 -'  3  0  ~/hello-node/app.js
 -'  1  0  ~/hello-node/app.js
@@ -176,14 +180,11 @@
 -'  26  7  ~/hello-node/dbtest.js
 -'  1  0  ~/hello-node/dbtest.js
 -'  28  0  ~/hello-node/dbtest.js
--'  16  2  ~/hello-node/dbtest.js
--'  25  10  ~/hello-node/dbtest.js
--'  4  14  ~/hello-node/dbtest.js
 
 # History of marks within files (newest to oldest):
 
 > ~/final-node/views/tablepage.handlebars
-	"	43	6
+	"	1	0
 	^	43	7
 	.	19	6
 	+	1	21
@@ -214,7 +215,7 @@
 	+	19	6
 
 > ~/final-node/final.js
-	"	100	0
+	"	111	0
 	^	100	0
 	.	96	2
 	+	102	2
