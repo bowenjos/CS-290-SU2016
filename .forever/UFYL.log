@@ -1,0 +1,79 @@
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+ReferenceError: rest is not defined
+    at /home/ubuntu/form-node/forms.js:13:4
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/form-node/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+ReferenceError: rest is not defined
+    at /home/ubuntu/form-node/forms.js:13:4
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/form-node/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+ReferenceError: rest is not defined
+    at /home/ubuntu/form-node/forms.js:13:4
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/form-node/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+ReferenceError: rest is not defined
+    at /home/ubuntu/form-node/forms.js:13:4
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/form-node/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+ReferenceError: rest is not defined
+    at /home/ubuntu/form-node/forms.js:13:4
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/form-node/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+ReferenceError: rest is not defined
+    at /home/ubuntu/form-node/forms.js:13:4
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/form-node/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+ReferenceError: rest is not defined
+    at /home/ubuntu/form-node/forms.js:13:4
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/ubuntu/form-node/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:312:13)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:280:7
+error: Forever detected script was killed by signal: SIGKILL

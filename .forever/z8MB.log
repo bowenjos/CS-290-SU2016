@@ -1,0 +1,5 @@
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+[ { name: 'myData', value: 'Hello' },
+  { name: 'otherData', value: 'World' } ]
+{ myData: 'Hello', otherData: 'World' }
+error: Forever detected script was killed by signal: SIGKILL

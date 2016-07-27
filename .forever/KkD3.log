@@ -1,0 +1,4 @@
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+[]
+undefined
+error: Forever detected script was killed by signal: SIGKILL

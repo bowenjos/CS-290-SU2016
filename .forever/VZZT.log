@@ -1,0 +1,24 @@
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+Error: Failed to lookup view "Whats up, Nerd?" in views directory "/home/ubuntu/form-node/views"
+    at EventEmitter.render (/home/ubuntu/form-node/node_modules/express/lib/application.js:579:17)
+    at ServerResponse.render (/home/ubuntu/form-node/node_modules/express/lib/response.js:960:7)
+    at /home/ubuntu/form-node/forms.js:11:8
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/form-node/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+Error: Failed to lookup view "Whats up, Nerd?" in views directory "/home/ubuntu/form-node/views"
+    at EventEmitter.render (/home/ubuntu/form-node/node_modules/express/lib/application.js:579:17)
+    at ServerResponse.render (/home/ubuntu/form-node/node_modules/express/lib/response.js:960:7)
+    at /home/ubuntu/form-node/forms.js:11:8
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/form-node/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/form-node/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/form-node/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/form-node/node_modules/express/lib/router/index.js:271:10)
+error: Forever detected script was killed by signal: SIGKILL

@@ -1,0 +1,13 @@
+/home/ubuntu/form-node/forms.js:26
+});
+   
+SyntaxError: Unexpected end of input
+    at exports.runInThisContext (vm.js:73:16)
+    at Module._compile (module.js:443:25)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+    at Function.Module.runMain (module.js:501:10)
+    at startup (node.js:129:16)
+    at node.js:814:3
+error: Forever detected script exited with code: 1
