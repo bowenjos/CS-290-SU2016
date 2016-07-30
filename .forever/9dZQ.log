@@ -1,0 +1,15 @@
+Thu, 28 Jul 2016 23:34:28 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Thu, 28 Jul 2016 23:34:28 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+ReferenceError: document is not defined
+    at /home/ubuntu/final-nodes/final.js:115:4
+    at Layer.handle [as handle_request] (/home/ubuntu/final-nodes/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/ubuntu/final-nodes/node_modules/express/lib/router/route.js:131:13)
+    at Route.dispatch (/home/ubuntu/final-nodes/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/ubuntu/final-nodes/node_modules/express/lib/router/layer.js:95:5)
+    at /home/ubuntu/final-nodes/node_modules/express/lib/router/index.js:277:22
+    at Function.process_params (/home/ubuntu/final-nodes/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/ubuntu/final-nodes/node_modules/express/lib/router/index.js:271:10)
+    at Immediate.<anonymous> (/home/ubuntu/final-nodes/node_modules/express-session/index.js:463:7)
+    at Immediate.immediate._onImmediate (timers.js:418:16)
+error: Forever detected script was killed by signal: SIGKILL

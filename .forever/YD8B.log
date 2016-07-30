@@ -1,0 +1,26 @@
+Thu, 28 Jul 2016 21:15:42 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Thu, 28 Jul 2016 21:15:42 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+[ { name: 'myData', value: 'Hello' },
+  { name: 'otherData', value: 'World' } ]
+{ myData: 'Hello', otherData: 'World' }
+/home/ubuntu/final-nodes/node_modules/mysql/lib/protocol/Parser.js:78
+        throw err; // Rethrow non-MySQL errors
+              ^
+ReferenceError: returnn is not defined
+    at Query._callback (/home/ubuntu/final-nodes/final.js:87:7)
+    at Query.Sequence.end (/home/ubuntu/final-nodes/node_modules/mysql/lib/protocol/sequences/Sequence.js:85:24)
+    at Query.ErrorPacket (/home/ubuntu/final-nodes/node_modules/mysql/lib/protocol/sequences/Query.js:94:8)
+    at Protocol._parsePacket (/home/ubuntu/final-nodes/node_modules/mysql/lib/protocol/Protocol.js:280:23)
+    at Parser.write (/home/ubuntu/final-nodes/node_modules/mysql/lib/protocol/Parser.js:74:12)
+    at Protocol.write (/home/ubuntu/final-nodes/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/home/ubuntu/final-nodes/node_modules/mysql/lib/Connection.js:109:28)
+    at Socket.emit (events.js:107:17)
+    at readableAddChunk (_stream_readable.js:163:16)
+    at Socket.Readable.push (_stream_readable.js:126:10)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #1
+Thu, 28 Jul 2016 21:28:15 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Thu, 28 Jul 2016 21:28:15 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+error: Forever detected script was killed by signal: SIGKILL

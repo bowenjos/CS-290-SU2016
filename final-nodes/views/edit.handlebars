@@ -1,0 +1,22 @@
+{{#each results}}
+<form>
+  <fieldset>
+    <Legend>Enter a Workout Item</legend>
+    <label for="name"></label>
+    Name: <input type="text" name="name" id="name" value="{{this.name}}"><br>
+    <label for="reps"></label>
+    Reps: <input type="number" name="reps" id="reps" value="{{this.reps}}"><br>
+    <label for="weight"></label>
+    Weight: <input type="number" name="weight" id="weight" value="{{this.weight}}"><br>
+    <label for="date"></label>
+    Date: <input type="date" name="date" id="date" value="{{this.date}}"><br>
+    <label for="lbs"></label>
+    Lbs: <br>
+    <input type="radio" name="lbs" value="0" checked> 0: kgs<br>
+    <input type="radio" name="lbs" value="1"> 1: lbs<br>
+    <input type="hidden" id="id" value="{{this.id}}">
+    <input type="submit" id="updateSubmit">
+    <input type="hidden" id="workoutSubmit">
+  </fieldset>
+</form>
+{{/each}}

@@ -255,3 +255,961 @@ ls
 cp form-get.handlebars tablepage.handlebars
 vim tablepage.handlebars
 exit
+ls
+cd final-node
+ls
+cd views
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+git add .
+git remote add origin https://github.com/bowenjos/CS-290-SU2016
+git init
+git remote add origin https://github.com/bowenjos/CS-290-SU2016
+git add .
+git commit -m "Final Project Files Unfinished v1"
+git push origin master
+git pull
+ls
+git push 
+git pull https://github.com/bowenjos/CS-290-SU2016
+ls
+git push origin master
+ls
+vim final-node
+cd final-node
+ls
+vim final.js
+ls
+d views
+cd views
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+rm -rf bin
+rm -rf src
+git commit -a -m 'unfinished v2'
+ls
+cd ..
+ls
+git push origin master
+ls
+ld
+la
+cd .git
+ls
+cd ..
+ls
+cd hello-node
+ls
+la
+cd ..
+ls
+cd form-node
+la
+rm .git
+rm -rf .git
+ls
+la
+cd ..
+ls
+git push origin master
+ls
+cd final-node
+la
+rm .git
+rm -rf .git
+ls
+cd ..
+ls
+git add .
+git commit -m 'Final Project Files Unfinished v2'
+git push origin master
+ls
+cd final-node
+ls
+cd ..
+ls
+move final-node/ final-nodes/
+mv final-node/ final-nodes/
+ls
+mv form-node/ form-nodes/
+ls
+git add .
+git commit -m 'Final Project Files Unfinished v2'
+git push origin master
+ls
+cd final-nodes
+ls
+cd views
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+la
+ls
+cd final-nodes
+ls
+exit
+ls
+cd final-nodes
+ls
+vim final.js
+ls
+forever start final.js
+ls
+cd ..
+ls
+cd form-nodes
+ls
+forever start forms.js
+ls
+cd views
+ls
+cd ..
+ls
+forever stop forms.js
+forever start forms.js
+ls
+cd ..
+ls
+cd final-nodes
+ls
+forever stop final.js
+ls
+cd .
+ls
+cd ..
+ls
+cd form-nodes
+ls
+forever start forms.js
+ls
+vim forms.js
+ls
+cd ..
+ls
+mv form-nodes/ form-node/
+ls
+cd form-node
+ls
+forever start forms.js
+cd ..
+ls
+cd final-nodes
+ls
+vim final.js
+forever start final.js
+ls
+vim final.js
+cd views
+ls
+cd ..
+ls
+vim final.js
+forever start final.js
+ls
+ps
+ls
+vim final.js
+node final.js
+vim final.js
+forever start final.js
+node final.js
+vim final.js
+ls
+vim final.js
+npm install --save express-handlebars
+ls
+forever start final.js
+node final.js
+npm install
+ls
+vim final.js
+cd ..
+ls
+cd form-node
+ls
+forever stop form.js
+forever stop forms.js
+forever start forms.js
+ls
+forever stop form.js
+forever stop forms.js
+cd ..
+ls
+cd final-nodes
+ls
+forever start final.js
+ls
+forever stop final.js
+ls
+cd ..
+ls
+cd form-node
+ls
+forever start forms.js
+ls
+cd ..
+ls
+cd final-nodes
+ls
+vim final.js
+ls
+cd ..
+ls
+cd form-node
+ls
+forever stop forms.js
+ls
+cd ..
+ls
+cd final-nodes
+ls
+forever start final.js
+ls
+forever stop final.js
+ls
+cd ..
+ls
+cd form-node
+forever start forms.js
+ls
+cd ..
+ls
+cd final-nodes
+ls
+vim final.js
+exit
+ls
+cd form-node
+ls
+forever stop forms.js
+ls
+cd ..
+ls
+cd final-nodes
+ls
+forever start final.js
+ls
+vim final.js
+forever stop final.js
+forever start final.js
+vim final.js
+forever stop final.js
+forever start final.js
+exit
+ls
+cd final-nodes
+ls
+vim final.js
+ls
+cd views
+ls
+vim added.handlebars
+vim tablepage.handlebars
+ls
+vim tablepage.handlebars
+vim table.js
+ls
+cd ..
+ls
+vim final.js
+cd views
+vim table.js
+ls
+cd ..
+npm install request --save
+ls
+cd views
+ls
+vim tablepage.handlebars
+cd ..
+ls
+vim final.js
+exit
+ls
+cd final-node
+ls
+cd final-nodes
+ls
+vim final.js
+ls
+cd views
+ls
+vim tablepage.handlebars
+cd ..
+ls
+forever stop final.js
+forever start final.js
+forever stop final.js
+ls
+cd ..
+ls
+cd form-node
+ls
+forever start forms.js
+cd ..
+ls
+cd final-nodes
+ls
+node final.js
+vim final.js
+ls
+cd ..
+ls
+cd form-node
+ls
+forever stop forms.js
+ls
+cd ..
+ls
+cd final-nodes
+ls
+forever start final.js
+vim final.js
+forever stop final.js
+forever start final.js
+vim final.js
+forever stop final.js
+forever start final.js
+vim final.js
+forever stop final.js
+forever start final.js
+ls
+vim final.js
+ls
+cd views
+ls
+vim tablepage.handlebars
+forever stop final.js
+forever start final.js
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+vim views
+cd views
+ls
+vim tablepage.handlebars
+ls
+vim tablepage.handlebars
+vim table.js
+;s
+ls
+cd ..
+ls
+vim final.js
+node final.js
+vim final.js
+node final.js
+forever stop final.js
+node final.js
+forever start final.js
+ls
+vim final.js
+cd views
+ls
+vim table.js
+exit
+ls
+cd final-nodes
+ls
+cd views
+ls
+mv table.js layouts/table.js
+ls
+cd layouts
+ls
+vim main.handlebars
+cd ..
+ls
+cd ..
+ls
+cd views
+ls
+cd layouts
+ls
+vim table.js
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+vim final.js
+forever stop final.js
+forever start final.js
+ls
+cd ..
+ls
+cd final-nodes
+ls
+cd views
+ls
+cd layouts
+ls
+vim table.js
+ls
+cd ..
+ls
+cd ..
+ls
+vim final.js
+exiy
+exit
+ls
+cd final-nodes
+ls
+vim final.js
+ls
+cd views
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+mv table.js ..table.js
+ls
+cd ..
+ls
+cd ..
+ls
+cd layouts
+ls
+cd views
+ls
+cd layouts
+ls
+la
+mv ..table.js table.js
+ls
+mv table.js ..
+ls
+cd ..
+ls
+mv table.js ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start table.js
+ls
+forever start final.js
+ls
+move table.js views/table.js
+ls
+mv table.js views/table.js
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+mv table.js layouts/table.js
+ls
+cd layouts
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+vim table.js
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+cd views
+ls
+vim tablepage.handlebars
+ls
+cd layours
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim table.js
+ls
+cd ..
+ls
+vim tablepage.handlebars
+ls
+cd layouts
+ls
+vim table.js
+ls
+vim main.handlebars
+vim table.js
+vim main.handlebars
+vim table.js
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+exit
+ls
+cd final-nodes
+ls
+vim final.js
+cd views
+ls
+cd layouts
+cd ..
+ls
+vim tablepage.handlebars
+cd ..
+vim final.js
+forever stop final.js
+forever start final.js
+vim final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim table.js
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+vim table.js
+rm table.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim table.js
+ls
+cd ..
+ls
+cd layouts
+ls
+vim table.js
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+forever stop final.js
+forever start final.js
+cdls
+cd
+ls
+cd final-nodes
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+cd table.js
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim table.js
+vim main.handlebars
+cd ..
+ls
+cd ..
+ls
+forever stop fina.js
+forever stop final.js
+forever start final.js
+ls
+vim final.js
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+cd ..
+ls
+vim tablepage.handlebars
+cd ..
+ls
+cd ..
+cd final-nodes
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+vim tablepage.handlebars
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+vim tablepage.handlebars
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+cp tablepage.handlebars edit.handlebars
+ls
+vim edit.handlebars
+ls
+cd ..
+ls
+vim final.js
+cd views
+ls
+vim edit.handlebars
+cd ..
+ls
+vim final.js
+cd views
+ls
+cd layouts
+ls
+vim table.js
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+exit
+ls
+cd final-nodes
+ls
+cd views
+ls
+cd layout
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+vim edit.handlebars
+vim tablepage.handlebars
+vim edit.handlebars
+vim tablepage.handlebars
+ls
+cd layouts
+ls
+vim main.handlebars
+cd ..
+ls
+vim tablepage.handlebars
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+vim tablepage.handlebars
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+vim edit.handlebars
+cd layouts
+ls
+vim main.handlebars
+ls
+vim main.handlebars
+ls
+vim table.js
+vim main.handlebars
+ls
+cd ..
+ls
+vim edit.handlebars
+ls
+cd layouts
+ls
+vim main.handlebars
+cd ..
+ls
+cd ll
+cd ..
+ls
+forever stop final.js
+forever start final.js
+cd ..
+ls
+cd form-node
+ls
+cd ..
+ls
+cd final-nodes
+ls
+node final.js
+vim final.js
+ls
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+ls
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+cd final-nodes
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+exit
+ls
+cd final-nodes
+ls
+cd views
+ls
+vim tablepage.handlebars
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd ..
+ls
+vim final.js
+ls
+cd views
+ls
+cd layouts
+ls
+exit

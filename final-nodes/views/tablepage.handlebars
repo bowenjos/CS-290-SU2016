@@ -4,17 +4,19 @@
   <fieldset>
     <Legend>Enter a Workout Item</legend>
     <label for="name"></label>
-    <input type="text" name="name" id="name"><br>
+    Name: <input type="text" name="name" id="name"><br>
     <label for="reps"></label>
-    <input type="number" name="reps" id="reps"><br>
+    Reps: <input type="number" name="reps" id="reps"><br>
     <label for="weight"></label>
-    <input type="number" name="weight" id="weight"><br>
+    Weight: <input type="number" name="weight" id="weight"><br>
     <label for="date"></label>
-    <input type="date" name="date" id="date">
-    <label for="lbs"></label><br>
-    <input type="radio" name="bool" value="0" checked> 0: kgs<br>
-    <input type="radio" name="bool" value="1"> 1: lbs<br>
+    Date: <input type="date" name="date" id="date"><br>
+    <label for="lbs"></label>
+    Lbs: <br>
+    <input type="radio" name="lbs" value="0" checked> 0: kgs<br>
+    <input type="radio" name="lbs" value="1"> 1: lbs<br>
     <input type="submit" id="workoutSubmit">
+    <input type="hidden" id="updateSubmit">
   </fieldset>
 </form>
 
@@ -36,8 +38,13 @@
     <td>{{this.weight}}</td>
     <td>{{this.date}}</td>
     <td>{{this.lbs}}</td>
-    <td><button type="button">Edit</button><td>
-    <td><button type="button">Delete</button><td>
+    <td>
+      <form action="edit-table" method="post">
+       <input type="hidden" name="id" value="{{this.id}}">
+       <input type="submit" value="Edit">
+      </form>
+    </td>
+    <td><button type="button" onclick="deleteClick({{this.id}})">Delete</button></td>
   </tr>
   {{/each}}
 </table>

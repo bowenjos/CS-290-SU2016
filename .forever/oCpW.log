@@ -1,0 +1,17 @@
+Wed, 27 Jul 2016 23:49:33 GMT express-session deprecated undefined resave option; provide resave option at final.js:20:9
+Wed, 27 Jul 2016 23:49:33 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:20:9
+events.js:85
+      throw er; // Unhandled 'error' event
+            ^
+Error: listen EACCES
+    at exports._errnoException (util.js:746:11)
+    at Server._listen2 (net.js:1139:19)
+    at listen (net.js:1182:10)
+    at Server.listen (net.js:1267:5)
+    at EventEmitter.listen (/home/ubuntu/final-nodes/node_modules/express/lib/application.js:617:24)
+    at Object.<anonymous> (/home/ubuntu/final-nodes/final.js:109:5)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+error: Forever detected script exited with code: 1
