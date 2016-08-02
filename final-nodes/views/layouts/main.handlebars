@@ -7,8 +7,10 @@
 	{{{body}}}
         <script>
 
+	//This code here is the javascript I use to handle the updating of a row
 	document.getElementById('updateSubmit').addEventListener('click', function(event){
-		console.log("I'm here 3");
+		
+		//I start by packaging all the updated content into a payload
   		var req = new XMLHttpRequest();
   		var payload = {id:null,name:null,reps:null,weight:null,date:null,lbs:null}
 		payload.name = document.getElementById('name').value;
@@ -22,7 +24,7 @@
 		} else {
 			payload.lbs = 0;
 		}
-
+		//Then I send the payload off to the page used to do the updating
   		req.open('POST', 'update-table', true);
   		req.setRequestHeader('Content-Type','application/json');
 		req.addEventListener('load',function(){
@@ -34,71 +36,91 @@
 		}});
   		req.send(JSON.stringify(payload));
   		event.preventDefault();
-		window.location="http://52.41.137.117:3000/table";
+
+		//finally I wait ever so shortly to allow the update and then i redirect back to the main page
+		window.setTimeout(redirect, 200); 
+		
 	});
 
+
+	function redirect(){
+		window.location="http://52.41.137.117:3000/table";
+	};
+
+	//Here is the code I use to add something to the table
 	document.getElementById('workoutSubmit').addEventListener('click', function(event){
-		console.log("in here");
+		
 		var req = new XMLHttpRequest();
   		var payload = {name:null,reps:null,weight:null,date:null,lbs:null}
-  		payload.name = document.getElementById('name').value;
-  		payload.reps = document.getElementById('reps').value;
-  		payload.weight = document.getElementById('weight').value;
- 		payload.date = document.getElementById('date').value;
-
-		var bool = document.getElementsByName('lbs');
-		if(bool[1].checked){
-			payload.lbs = 1;
-		} else {
-			payload.lbs = 0;
-		}
-
-  		req.open('POST', 'insert-table', true);
-  		req.setRequestHeader('Content-Type','application/json');
-		req.addEventListener('load', function(){
-		  if(req.status >= 200 & req.status < 400){
-			var response = JSON.parse(req.responseText);
-			console.log(response);
-			console.log(response.length);
-				
-			var table = document.getElementById("table");
-			var row = table.insertRow(-1);
-			for(i = 0; i < 7; i++) {
-				row.insertCell(-1);
-			}
-			row.childNodes[0].innerHTML = payload.name
-			row.childNodes[1].innerHTML = payload.reps
-			row.childNodes[2].innerHTML = payload.weight
-			row.childNodes[3].innerHTML = payload.date
-			row.childNodes[4].innerHTML = payload.lbs
-			var form = document.createElement("FORM");
-			form.setAttribute("action","edit-table")
-			form.setAttribute("method","post")
-			row.childNodes[5].appendChild(form);
-			var hidden = document.createElement("INPUT")
-			hidden.setAttribute("type","hidden")
-			hidden.setAttribute("name","id")
-			hidden.setAttribute("value",response[response.length-1].id)
-			form.appendChild(hidden)
-			var edit = document.createElement("INPUT")
-			edit.setAttribute("type","submit")
-			edit.setAttribute("value","Edit")
-			form.appendChild(edit)
-			var deletee = document.createElement("BUTTON")
-			deletee.setAttribute("type","button")
-			deletee.innerHTML = "Delete"
-			deletee.setAttribute("onclick","deleteClick(event,"+response[response.length-1].id+")")
-			row.childNodes[6].appendChild(deletee)
+  		//I first start by checking to see if name is empty or not
+		//If name isn't empty we continue, if it is the road ends here
+		if(document.getElementById('name').value.length != 0){
+		  //After completing that check I package all the information together
+		  payload.name = document.getElementById('name').value;
+  		  payload.reps = document.getElementById('reps').value;
+  		  payload.weight = document.getElementById('weight').value;
+ 		  payload.date = document.getElementById('date').value;
+		  var bool = document.getElementsByName('lbs');
+		  if(bool[1].checked){
+		    payload.lbs = 1;
+		  } else {
+		    payload.lbs = 0;
+		  }
+		  //Here I open the page that all this information will be sent to
+  		  req.open('POST', 'insert-table', true);
+  		  req.setRequestHeader('Content-Type','application/json');
+		  req.addEventListener('load', function(){
+		    if(req.status >= 200 & req.status < 400){
+		      //If the code is successful then this block begins
+		      //In this block I use javascript to construct a new row of the table using the information retrieved from the Ajax request
+		      var response = JSON.parse(req.responseText);
+		      console.log(response);
+		      console.log(response.length);
+		      //I create a new row and then all 7 cells
+		      var table = document.getElementById("table");
+		      var row = table.insertRow(-1);
+		      for(i = 0; i < 7; i++) {
+			row.insertCell(-1);
+		      }
+		      //I populate the basic information from the form
+		      row.childNodes[0].innerHTML = response[response.length-1].name
+		      row.childNodes[1].innerHTML = response[response.length-1].reps
+		      row.childNodes[2].innerHTML = response[response.length-1].weight
+		      row.childNodes[3].innerHTML = response[response.length-1].date
+		      row.childNodes[4].innerHTML = response[response.length-1].lbs
+		      //Then I create a form witht he button used to redirect to the edit page
+		      var form = document.createElement("FORM");
+		      form.setAttribute("action","edit-table")
+		      form.setAttribute("method","post")
+		      row.childNodes[5].appendChild(form);
+		      var hidden = document.createElement("INPUT")
+		      hidden.setAttribute("type","hidden")
+		      hidden.setAttribute("name","id")
+		      hidden.setAttribute("value",response[response.length-1].id)
+		      form.appendChild(hidden)
+		      var edit = document.createElement("INPUT")
+		      edit.setAttribute("type","submit")
+		      edit.setAttribute("value","Edit")
+		      form.appendChild(edit)
+		      //Lastly I make the delete button
+		      var deletee = document.createElement("BUTTON")
+		      deletee.setAttribute("type","button")
+		      deletee.innerHTML = "Delete"
+		      deletee.setAttribute("onclick","deleteClick(event,"+response[response.length-1].id+")")
+		      row.childNodes[6].appendChild(deletee)
 		
-		  } else { 
-			console.log("Error in network request: " + req.statusText);
+		    } else { 
+		      console.log("Error in network request: " + req.statusText);
 		  }});
-		req.send(JSON.stringify(payload));
+		  req.send(JSON.stringify(payload));
+		} else {
+		  console.log("Name is empty, put a value in name");
+		}
   		event.preventDefault();
 	});
-
+	
+	//This is the function that runs when you go to delete something
 	function deleteClick(event, idDelete){
-		console.log("I'm here 2");
 		var req = new XMLHttpRequest();
 		var payload = {id:null}
 		payload.id = idDelete;

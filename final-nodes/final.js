@@ -89,7 +89,7 @@ app.post('/insert-table',function(req,res,next){
       return;
     }
 
-    pool.query("SELECT * FROM workouts", function(err, rows, fields){
+    pool.query("SELECT name, reps, weight, DATE_FORMAT(date,'%Y-%m-%d') AS date, lbs, id FROM workouts", function(err, rows, fields){
       if(err){
         next(err);
         return;

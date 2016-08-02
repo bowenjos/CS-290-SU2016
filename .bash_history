@@ -1853,3 +1853,54 @@ cd layouts
 ls
 vim main.handlebars
 exit
+ls
+cd final-nodes
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+vim tablepage.handlebars
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd views
+ls
+cd layouts
+ls
+vim main.handlebars
+ls
+cd ..
+ls
+cd ..
+ls
+forever stop final.js
+forever start final.js
+ls
+cd ..
+ls
+git add .
+git commit -m "Finished v1.0.0"
+ls
+git push origin master
+exit
