@@ -1,0 +1,36 @@
+Sun, 31 Jul 2016 01:02:44 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Sun, 31 Jul 2016 01:02:44 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+Sun, 31 Jul 2016 01:02:55 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at final.js:91:9
+_http_outgoing.js:335
+    throw new Error('Can\'t set headers after they are sent.');
+          ^
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:335:11)
+    at ServerResponse.header (/home/ubuntu/final-nodes/node_modules/express/lib/response.js:719:10)
+    at ServerResponse.send (/home/ubuntu/final-nodes/node_modules/express/lib/response.js:164:12)
+    at done (/home/ubuntu/final-nodes/node_modules/express/lib/response.js:956:10)
+    at Immediate._onImmediate (/home/ubuntu/final-nodes/node_modules/express-handlebars/lib/utils.js:26:13)
+    at processImmediate [as _immediateCallback] (timers.js:367:17)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #1
+Sun, 31 Jul 2016 01:02:56 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Sun, 31 Jul 2016 01:02:57 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+Sun, 31 Jul 2016 01:04:30 GMT express deprecated res.send(status): Use res.sendStatus(status) instead at final.js:91:9
+_http_outgoing.js:335
+    throw new Error('Can\'t set headers after they are sent.');
+          ^
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:335:11)
+    at ServerResponse.header (/home/ubuntu/final-nodes/node_modules/express/lib/response.js:719:10)
+    at ServerResponse.send (/home/ubuntu/final-nodes/node_modules/express/lib/response.js:164:12)
+    at done (/home/ubuntu/final-nodes/node_modules/express/lib/response.js:956:10)
+    at Immediate._onImmediate (/home/ubuntu/final-nodes/node_modules/express-handlebars/lib/utils.js:26:13)
+    at processImmediate [as _immediateCallback] (timers.js:367:17)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #2
+Sun, 31 Jul 2016 01:04:31 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Sun, 31 Jul 2016 01:04:31 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+error: Forever detected script was killed by signal: SIGKILL

@@ -79,6 +79,8 @@ app.post('/form-post',function(req,res){
    res.render('form-post', context);
 });
 
+//This is the code that I use to handle the insertion of items into the table
+//I make an ajax request to this url using a form that contains all the data required
 app.post('/insert-table',function(req,res,next){
   var context = {};
   pool.query("INSERT INTO workouts(name, reps, weight, date, lbs) VALUES (?, ?, ?, ?, ?)", [req.body.name, req.body.reps, req.body.weight, req.body.date, req.body.lbs], function(err, result){
@@ -86,10 +88,20 @@ app.post('/insert-table',function(req,res,next){
       next(err);
       return;
     }
-    res.render('added',context);
+
+    pool.query("SELECT * FROM workouts", function(err, rows, fields){
+      if(err){
+        next(err);
+        return;
+      }
+      context.results = JSON.stringify(rows);
+      res.send(context.results);
+   });
   });
 });
 
+//This is the code used to delete a row from the table
+//This url will take an id through ajax and remove it from the table
 app.post('/remove-table',function(req,res,next){
   var context = {};
   pool.query("DELETE FROM workouts WHERE id=?", [req.body.id], function(err, results){
@@ -101,9 +113,11 @@ app.post('/remove-table',function(req,res,next){
   });
 });
 
+//This is the seperate page you are taken to when you want to edit data
+//Unlike /table this page is just a form and it's prepopulated
 app.post('/edit-table',function(req,res,next){
   var context = {};
-  var string = "SELECT * FROM workouts WHERE id="+
+  var string = "SELECT name, reps, weight, DATE_FORMAT(date,'%Y-%m-%d') AS date, lbs, id FROM workouts WHERE id="+
   req.body.id;
   pool.query(string,function(err, rows, fields){
     if(err){
@@ -115,6 +129,8 @@ app.post('/edit-table',function(req,res,next){
   });
 });
 
+//When you click submit on /edit-table this is where the information is sent off to
+//While the information goes to this page you are redirected back to /table
 app.post('/update-table',function(req,res,next){
   var context = {};
   pool.query("UPDATE workouts SET name=?, reps=?, weight=?, date=?, lbs=? WHERE id=? ", [req.body.name, req.body.reps, req.body.weight, req.body.date, req.body.lbs, req.body.id], function(err,result){
@@ -125,7 +141,8 @@ app.post('/update-table',function(req,res,next){
     res.render('added');
   });  
 });
-   
+
+//This is the code provided to us. it resets the table
 app.get('/reset-table',function(req,res,next){
   var context = {};
   pool.query("DROP TABLE IF EXISTS workouts", function(err){
@@ -144,11 +161,12 @@ app.get('/reset-table',function(req,res,next){
 });
 
 
-
+//This is the main page.
+//On this page you can add things to the table, view, edit, and delete things already in the table
 app.get('/table',function(req,res){
    var context = {};
 
-   pool.query('SELECT * FROM ' + 'workouts', function(err, rows, fields){
+   pool.query("SELECT name, reps, weight, DATE_FORMAT(date,'%Y-%m-%d') AS date, lbs, id FROM workouts", function(err, rows, fields){
      if(err){
        next(err);
        return;

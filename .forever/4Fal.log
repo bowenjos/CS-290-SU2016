@@ -1,0 +1,5 @@
+Sun, 31 Jul 2016 18:47:19 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Sun, 31 Jul 2016 18:47:19 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+Express started on http://localhost:3000; press Ctrl+C to terminate.
+{ results: 8 }
+error: Forever detected script was killed by signal: SIGKILL

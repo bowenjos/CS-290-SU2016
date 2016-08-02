@@ -32,395 +32,273 @@ $
 
 # Registers:
 "0	CHAR	0
-	document.getElementById('workoutSubmit').addEventListener('click', function(event){
+	var string = "SELECT name, reps, weight, DATE_FORMAT(date,'%Y-%m-%d') AS date, lbs, id FROM workouts WHERE id="+
+	  req.body.id;
+	  pool.query(string,function(err, rows, fields){
+	    if(err){
+	      next(err);
+	      return;
+	    }
+	    context.results = rows;
 	
-	 var req = new XMLHttpRequest();
-	  		var payload = {name:null,reps:null,weight:null,date:null,lbs:null}
-	  		payload.name = document.getElementById('name').value;
-	  		payload.reps = document.getElementById('reps').value;
-	  		payload.weight = document.getElementById('weight').value;
-	 		payload.date = document.getElementById('date').value;
-	
-			var bool = document.GetElementsByName('lbs');
-			if(bool[1].checked){
-				payload.lbs = 1;
-			} else {
-				payload.lbs = 0;
-			}
-	
-	  		req.open('POST', '92.41.137.117:3000/insert-table', true);
-	  		req.setRequestHeader('Content-Type','application/json');
-	  		req.send(JSON.stringify(payload));
-	  		event.preventDefault();
-	 
-	 
-	});
 "1	LINE	0
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v149)
+	"   /home/ubuntu/final-nodes
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	./
+	node_modules/
+	views/
+	final.js
+	package.json
+	.swp
+"2	LINE	0
 	  var req = new XMLHttpRequest();
 	  var payload = {name:null,reps:null,weight:null,date:null,lbs:null}
-"2	LINE	0
-	
 "3	LINE	0
-	}
+	
 "4	LINE	0
-		cookie: {}
+	}
 "5	LINE	0
-		secret: 'L4fk5OPc34',
+		cookie: {}
 "6	LINE	0
-	var sess = {
+		secret: 'L4fk5OPc34',
 "7	LINE	0
-	  dd});
+	var sess = {
 "8	LINE	0
+	  dd});
+"9	LINE	0
 	var con = mysql.createConnection({
 ""-	CHAR	0
-	f
+	d
 
 # File marks:
-'0  35  25  ~/final-nodes/views/layouts/main.handlebars
-'1  120  87  ~/final-nodes/final.js
-'2  126  4  ~/final-nodes/final.js
-'3  119  29  ~/final-nodes/final.js
-'4  15  0  ~/final-nodes/views/edit.handlebars
-'5  6  63  ~/final-nodes/views/edit.handlebars
-'6  41  52  ~/final-nodes/views/layouts/main.handlebars
-'7  1  0  ~/final-nodes/views/404page.handlebars
-'8  3  15  ~/final-nodes/views/500page.handlebars
-'9  170  2  ~/final-nodes/final.js
+'0  117  2  ~/final-nodes/views/layouts/main.handlebars
+'1  100  30  ~/final-nodes/views/layouts/main.handlebars
+'2  47  56  ~/final-nodes/views/tablepage.handlebars
+'3  84  17  ~/final-nodes/views/layouts/main.handlebars
+'4  10  2  ~/final-nodes/views/layouts/main.handlebars
+'5  69  0  ~/final-nodes/views/layouts/main.handlebars
+'6  100  21  ~/final-nodes/final.js
+'7  92  78  ~/final-nodes/final.js
+'8  101  5  ~/final-nodes/final.js
+'9  20  15  ~/final-nodes/views/layouts/main.handlebars
 
 # Jumplist (newest first):
--'  35  25  ~/final-nodes/views/layouts/main.handlebars
+-'  117  2  ~/final-nodes/views/layouts/main.handlebars
 -'  1  0  ~/final-nodes/views/layouts/main.handlebars
--'  120  87  ~/final-nodes/final.js
+-'  100  30  ~/final-nodes/views/layouts/main.handlebars
+-'  47  56  ~/final-nodes/views/tablepage.handlebars
+-'  1  0  ~/final-nodes/views/tablepage.handlebars
+-'  84  17  ~/final-nodes/views/layouts/main.handlebars
+-'  10  2  ~/final-nodes/views/layouts/main.handlebars
+-'  69  0  ~/final-nodes/views/layouts/main.handlebars
+-'  100  21  ~/final-nodes/final.js
 -'  1  0  ~/final-nodes/final.js
--'  126  4  ~/final-nodes/final.js
--'  119  29  ~/final-nodes/final.js
--'  15  0  ~/final-nodes/views/edit.handlebars
+-'  92  78  ~/final-nodes/final.js
+-'  101  5  ~/final-nodes/final.js
+-'  20  15  ~/final-nodes/views/layouts/main.handlebars
+-'  22  0  ~/final-nodes/views/edit.handlebars
 -'  1  0  ~/final-nodes/views/edit.handlebars
+-'  138  124  ~/final-nodes/final.js
+-'  26  23  ~/final-nodes/views/layouts/main.handlebars
+-'  171  92  ~/final-nodes/final.js
+-'  14  54  ~/final-nodes/views/layouts/main.handlebars
+-'  39  0  ~/final-nodes/views/layouts/main.handlebars
+-'  68  0  ~/final-nodes/final.js
+-'  72  6  ~/final-nodes/views/layouts/main.handlebars
+-'  94  1  ~/final-nodes/views/layouts/main.handlebars
+-'  120  0  ~/final-nodes/final.js
+-'  63  3  ~/final-nodes/views/layouts/main.handlebars
+-'  71  4  ~/final-nodes/views/layouts/main.handlebars
+-'  175  5  ~/final-nodes/final.js
+-'  88  5  ~/final-nodes/views/layouts/main.handlebars
+-'  91  10  ~/final-nodes/views/layouts/main.handlebars
+-'  95  2  ~/final-nodes/views/layouts/main.handlebars
+-'  37  0  ~/final-nodes/views/layouts/main.handlebars
+-'  31  24  ~/final-nodes/views/layouts/main.handlebars
+-'  59  16  ~/final-nodes/views/layouts/main.handlebars
+-'  89  22  ~/final-nodes/views/layouts/main.handlebars
+-'  96  0  ~/final-nodes/views/layouts/main.handlebars
+-'  42  6  ~/final-nodes/views/tablepage.handlebars
+-'  75  0  ~/final-nodes/views/layouts/main.handlebars
+-'  76  15  ~/final-nodes/views/layouts/main.handlebars
+-'  67  43  ~/final-nodes/views/layouts/main.handlebars
+-'  22  0  ~/final-nodes/views/tablepage.handlebars
+-'  24  16  ~/final-nodes/views/tablepage.handlebars
+-'  11  0  ~/final-nodes/views/layouts/main.handlebars
+-'  67  2  ~/final-nodes/final.js
+-'  1  1  ~/final-nodes
+-'  144  4  ~/final-nodes/final.js
+-'  137  29  ~/final-nodes/final.js
+-'  15  0  ~/final-nodes/views/edit.handlebars
 -'  6  63  ~/final-nodes/views/edit.handlebars
--'  41  52  ~/final-nodes/views/layouts/main.handlebars
+-'  43  52  ~/final-nodes/views/layouts/main.handlebars
 -'  1  0  ~/final-nodes/views/404page.handlebars
 -'  3  15  ~/final-nodes/views/500page.handlebars
 -'  1  0  ~/final-nodes/views/500page.handlebars
--'  170  2  ~/final-nodes/final.js
--'  31  48  ~/final-nodes/views/layouts/main.handlebars
--'  18  33  ~/final-nodes/views/layouts/main.handlebars
+-'  190  2  ~/final-nodes/final.js
+-'  33  48  ~/final-nodes/views/layouts/main.handlebars
+-'  19  33  ~/final-nodes/views/layouts/main.handlebars
 -'  17  0  ~/final-nodes/views/edit.handlebars
 -'  19  43  ~/final-nodes/views/edit.handlebars
--'  1  0  ~/final-nodes/views/tablepage.handlebars
--'  64  3  ~/final-nodes/views/layouts/main.handlebars
--'  107  2  ~/final-nodes/final.js
+-'  97  3  ~/final-nodes/views/layouts/main.handlebars
+-'  123  2  ~/final-nodes/final.js
 -'  45  12  ~/final-nodes/views/tablepage.handlebars
 -'  20  2  ~/final-nodes/views/tablepage.handlebars
--'  44  10  ~/final-nodes/views/layouts/main.handlebars
--'  39  24  ~/final-nodes/views/layouts/main.handlebars
--'  37  0  ~/final-nodes/views/layouts/main.handlebars
--'  85  0  ~/final-nodes/final.js
--'  77  0  ~/final-nodes/views/layouts/main.handlebars
--'  56  30  ~/final-nodes/views/layouts/main.handlebars
--'  97  15  ~/final-nodes/final.js
--'  42  7  ~/final-nodes/views/layouts/main.handlebars
--'  16  6  ~/final-nodes/views/layouts/main.handlebars
+-'  46  10  ~/final-nodes/views/layouts/main.handlebars
+-'  41  24  ~/final-nodes/views/layouts/main.handlebars
+-'  87  0  ~/final-nodes/final.js
+-'  110  0  ~/final-nodes/views/layouts/main.handlebars
+-'  58  30  ~/final-nodes/views/layouts/main.handlebars
+-'  111  15  ~/final-nodes/final.js
+-'  44  7  ~/final-nodes/views/layouts/main.handlebars
+-'  17  6  ~/final-nodes/views/layouts/main.handlebars
 -'  8  15  ~/final-nodes/views/layouts/main.handlebars
 -'  1  0  ~/final-nodes/views/layouts/table.js
--'  12  0  ~/final-nodes/views/layouts/main.handlebars
+-'  13  0  ~/final-nodes/views/layouts/main.handlebars
 -'  50  0  ~/final-nodes/views/tablepage.handlebars
--'  82  2  ~/final-nodes/views/layouts/main.handlebars
--'  113  0  ~/final-nodes/final.js
--'  84  0  ~/final-nodes/views/layouts/main.handlebars
+-'  120  2  ~/final-nodes/views/layouts/main.handlebars
+-'  129  0  ~/final-nodes/final.js
+-'  122  0  ~/final-nodes/views/layouts/main.handlebars
 -'  41  7  ~/final-nodes/views/tablepage.handlebars
 -'  18  34  ~/final-nodes/views/edit.handlebars
 -'  7  0  ~/final-nodes/views/edit.handlebars
--'  122  4  ~/final-nodes/final.js
+-'  140  4  ~/final-nodes/final.js
 -'  75  3  ~/final-nodes/final.js
--'  47  88  ~/final-nodes/views/tablepage.handlebars
 -'  3  0  ~/final-nodes/views/layouts/table.js
--'  129  0  ~/final-nodes/final.js
--'  116  2  ~/final-nodes/final.js
--'  156  28  ~/final-nodes/final.js
--'  25  21  ~/final-nodes/views/layouts/main.handlebars
--'  149  0  ~/final-nodes/final.js
--'  28  42  ~/final-nodes/views/layouts/main.handlebars
--'  87  6  ~/final-nodes/views/layouts/main.handlebars
+-'  148  0  ~/final-nodes/final.js
+-'  132  2  ~/final-nodes/final.js
+-'  176  28  ~/final-nodes/final.js
+-'  169  0  ~/final-nodes/final.js
+-'  29  42  ~/final-nodes/views/layouts/main.handlebars
+-'  125  6  ~/final-nodes/views/layouts/main.handlebars
 -'  17  22  ~/final-nodes/views/layouts/table.js
 -'  1  0  ~/final-nodes/table.js
--'  132  0  ~/final-nodes/final.js
--'  160  0  ~/final-nodes/final.js
+-'  151  0  ~/final-nodes/final.js
+-'  180  0  ~/final-nodes/final.js
 -'  34  17  ~/final-nodes/views/tablepage.handlebars
--'  157  35  ~/final-nodes/final.js
+-'  177  35  ~/final-nodes/final.js
 -'  22  0  ~/final-nodes/views/layouts/table.js
--'  11  4  ~/final-nodes/views/layouts/main.handlebars
--'  24  0  ~/final-nodes/views/layouts/main.handlebars
+-'  12  4  ~/final-nodes/views/layouts/main.handlebars
+-'  25  0  ~/final-nodes/views/layouts/main.handlebars
 -'  16  33  ~/final-nodes/views/tablepage.handlebars
--'  10  25  ~/final-nodes/views/layouts/main.handlebars
--'  5  0  ~/final-nodes/views/tablepage.handlebars
--'  9  0  ~/final-nodes/views/tablepage.handlebars
--'  9  0  ~/final-nodes/views/layouts/main.handlebars
--'  85  0  ~/final-nodes/views/layouts/main.handlebars
--'  17  32  ~/final-nodes/views/tablepage.handlebars
--'  61  0  ~/final-nodes/final.js
--'  90  0  ~/final-nodes/final.js
--'  150  0  ~/final-nodes/final.js
--'  1  0  ~/final-nodes/views/table.js
--'  146  0  ~/final-nodes/final.js
--'  154  0  ~/final-nodes/final.js
--'  1  0  ~/final-nodes/views
--'  155  4  ~/final-nodes/final.js
--'  84  86  ~/final-nodes/final.js
--'  89  10  ~/final-nodes/final.js
--'  82  27  ~/final-nodes/final.js
--'  163  18  ~/final-nodes/final.js
--'  92  0  ~/final-nodes/final.js
--'  31  0  ~/final-nodes/views/tablepage.handlebars
--'  13  2  ~/final-nodes/views/table.js
--'  131  0  ~/final-nodes/final.js
--'  9  38  ~/final-nodes/views/table.js
--'  3  33  ~/final-nodes/views/added.handlebars
--'  1  0  ~/final-nodes/views/added.handlebars
--'  91  2  ~/final-nodes/final.js
--'  139  7  ~/final-nodes/final.js
--'  2  0  ~/final-nodes/final.js
--'  130  14  ~/final-nodes/final.js
--'  25  19  ~/final-nodes/final.js
--'  21  14  ~/final-nodes/final.js
--'  141  0  ~/final-nodes/final.js
--'  174  0  ~/final-nodes/final.js
--'  120  87  ~/final-nodes/final.js
 
 # History of marks within files (newest to oldest):
 
 > ~/final-nodes/views/layouts/main.handlebars
-	"	35	25
-	^	35	26
-	.	35	25
-	+	4	21
-	+	8	16
-	+	9	0
-	+	85	0
-	+	9	0
-	+	10	3
-	+	12	3
-	+	12	30
-	+	12	87
-	+	12	144
-	+	12	204
-	+	24	2
-	+	12	205
-	+	25	3
-	+	26	3
-	+	33	3
-	+	34	3
-	+	36	0
-	+	10	25
-	+	12	305
-	+	12	378
-	+	25	0
-	+	12	280
-	+	25	22
-	+	31	66
-	+	32	5
-	+	28	42
-	+	25	22
-	+	64	4
-	+	64	4
-	+	9	1
-	+	64	5
-	+	9	29
-	+	10	24
-	+	12	26
-	+	12	26
-	+	64	236
-	+	64	137
-	+	64	121
-	+	64	56
-	+	64	29
-	+	64	145
-	+	64	171
-	+	64	502
+	"	117	2
+	^	117	3
+	.	117	2
+	+	76	43
+	+	77	53
+	+	81	42
+	+	84	48
+	+	88	37
+	+	89	0
+	+	78	0
+	+	80	37
+	+	77	20
+	+	81	22
+	+	85	25
+	+	86	20
+	+	89	22
+	+	31	24
+	+	90	0
+	+	94	9
+	+	91	12
+	+	92	8
+	+	94	70
+	+	95	39
+	+	119	1
+	+	84	3
+	+	94	3
+	+	95	10
+	+	93	22
+	+	87	5
+	+	88	5
+	+	67	3
+	+	68	3
+	+	69	3
+	+	70	3
+	+	71	3
+	+	72	3
+	+	73	3
+	+	74	3
+	+	75	3
+	+	76	3
+	+	77	3
+	+	78	3
+	+	79	3
+	+	80	3
+	+	81	3
+	+	82	3
+	+	83	3
+	+	84	2
+	+	67	2
+	+	68	2
+	+	69	2
+	+	70	2
+	+	71	2
+	+	72	2
+	+	73	2
+	+	74	2
+	+	75	2
+	+	76	2
+	+	77	2
+	+	78	2
+	+	79	2
+	+	80	2
+	+	81	2
 	+	82	2
-	+	64	499
-	+	37	0
-	+	38	0
-	+	40	1
-	+	38	0
-	+	64	0
-	+	64	0
-	+	9	31
-	+	25	27
-	+	12	22
-	+	64	56
-	+	67	24
-	+	10	24
-	+	12	70
-	+	16	55
-	+	18	22
-	+	47	22
-	+	54	22
-	+	63	0
-	+	18	31
-	+	47	32
-	+	18	46
-	+	23	2
-	+	59	11
-	+	62	10
-	+	61	5
-	+	2	0
-	+	56	30
-	+	39	24
-	+	47	32
-	+	18	32
-	+	64	185
-	+	65	0
-	+	18	33
-	+	58	11
-	+	60	49
-	+	31	49
-	+	12	26
-	+	17	13
-	+	16	15
-	+	17	50
-	+	35	25
-
-> ~/final-nodes/final.js
-	"	120	87
-	^	120	88
-	.	120	73
-	+	25	17
-	+	157	26
-	+	21	15
-	+	25	19
-	+	139	17
-	+	131	11
-	+	139	13
-	+	131	5
-	+	139	7
-	+	82	46
-	+	84	6
-	+	82	7
-	+	84	194
-	+	90	5
-	+	91	2
-	+	155	3
-	+	157	27
-	+	152	4
-	+	153	6
-	+	154	5
-	+	155	4
-	+	157	29
-	+	158	4
-	+	158	5
-	+	157	40
-	+	5	32
-	+	82	27
-	+	84	140
-	+	87	11
-	+	84	86
-	+	150	2
-	+	150	90
-	+	150	126
-	+	150	197
-	+	150	255
-	+	150	313
-	+	150	374
-	+	150	432
-	+	150	488
-	+	150	552
-	+	150	613
-	+	150	652
-	+	150	678
-	+	149	20
-	+	149	20
-	+	146	0
-	+	151	0
-	+	156	44
-	+	157	35
-	+	156	45
-	+	156	260
-	+	156	28
-	+	157	0
-	+	104	47
-	+	117	3
-	+	107	7
-	+	104	38
-	+	107	13
-	+	116	2
-	+	118	48
-	+	119	18
-	+	129	4
-	+	119	66
-	+	106	48
-	+	119	107
-	+	129	3
-	+	128	2
-	+	121	7
-	+	122	9
-	+	123	9
-	+	124	7
-	+	125	7
-	+	126	9
-	+	126	10
-	+	127	2
-	+	117	0
-	+	118	0
-	+	129	0
-	+	128	0
-	+	93	36
-	+	104	38
-	+	102	2
-	+	97	15
-	+	170	2
-	+	119	30
-	+	120	2
-	+	120	164
-	+	126	9
-	+	127	0
-	+	121	4
-	+	122	7
-	+	123	7
-	+	124	4
-	+	125	4
-	+	126	1
-	+	127	0
-	+	120	73
-
-> ~/final-nodes/views/edit.handlebars
-	"	15	0
-	^	6	64
-	.	6	63
-	+	1	0
-	+	3	0
-	+	23	0
-	+	6	73
-	+	8	75
-	+	10	83
-	+	12	74
-	+	6	74
-	+	8	76
-	+	10	84
-	+	18	32
-	+	17	47
-	+	18	43
-	+	19	43
-	+	1	16
-	+	22	8
-	+	17	32
-	+	12	63
-	+	10	71
-	+	8	65
-	+	6	63
-
-> ~/final-nodes/views/404page.handlebars
-	"	1	0
-
-> ~/final-nodes/views/500page.handlebars
-	"	3	15
-	^	3	16
-	.	3	15
-	+	3	15
+	+	83	2
+	+	84	3
+	+	59	3
+	+	61	3
+	+	63	3
+	+	84	2
+	+	81	2
+	+	94	2
+	+	8	38
+	+	10	4
+	+	14	57
+	+	14	88
+	+	14	98
+	+	14	55
+	+	10	4
+	+	14	86
+	+	14	96
+	+	14	55
+	+	15	0
+	+	20	15
+	+	10	38
+	+	10	62
+	+	100	42
+	+	10	5
+	+	10	4
+	+	10	3
+	+	10	1
+	+	10	2
+	+	10	3
+	+	10	4
+	+	11	0
+	+	90	52
+	+	100	26
+	+	118	24
+	+	100	30
+	+	1	1
+	+	117	56
+	+	118	45
+	+	117	2
 
 > ~/final-nodes/views/tablepage.handlebars
-	"	1	0
-	^	45	13
-	.	45	12
+	"	47	56
+	^	47	57
+	.	47	56
 	+	7	9
 	+	9	9
 	+	11	11
@@ -473,11 +351,156 @@ $
 	+	41	47
 	+	47	0
 	+	44	41
-	+	42	5
+	+	41	13
 	+	47	0
 	+	43	57
 	+	46	3
 	+	45	12
+	+	24	16
+	+	41	43
+	+	42	8
+	+	42	0
+	+	47	56
+
+> ~/final-nodes/final.js
+	"	175	0
+	^	175	0
+	.	98	29
+	+	167	20
+	+	167	20
+	+	163	0
+	+	169	0
+	+	174	44
+	+	175	35
+	+	174	45
+	+	174	260
+	+	174	28
+	+	175	0
+	+	118	47
+	+	131	3
+	+	121	7
+	+	118	38
+	+	121	13
+	+	130	2
+	+	134	48
+	+	135	18
+	+	146	4
+	+	135	66
+	+	120	48
+	+	135	107
+	+	146	3
+	+	144	2
+	+	137	7
+	+	138	9
+	+	139	9
+	+	140	7
+	+	141	7
+	+	142	9
+	+	142	10
+	+	143	2
+	+	131	0
+	+	134	0
+	+	146	0
+	+	144	0
+	+	105	36
+	+	118	38
+	+	114	2
+	+	109	15
+	+	188	2
+	+	135	30
+	+	136	2
+	+	136	164
+	+	142	9
+	+	143	0
+	+	137	4
+	+	138	7
+	+	139	7
+	+	140	4
+	+	141	4
+	+	142	1
+	+	143	0
+	+	136	73
+	+	82	77
+	+	83	84
+	+	103	54
+	+	104	39
+	+	116	71
+	+	117	61
+	+	133	74
+	+	145	53
+	+	165	89
+	+	98	68
+	+	98	12
+	+	97	71
+	+	98	29
+	+	98	68
+	+	100	0
+	+	97	66
+	+	98	19
+	+	97	69
+	+	120	89
+	+	169	97
+	+	169	14
+	+	169	93
+	+	91	0
+	+	91	0
+	+	91	3
+	+	91	3
+	+	92	3
+	+	93	5
+	+	94	7
+	+	95	7
+	+	96	5
+	+	97	5
+	+	97	50
+	+	97	50
+	+	98	5
+	+	100	2
+	+	99	5
+	+	91	0
+	+	91	0
+	+	92	141
+	+	92	78
+	+	97	80
+	+	92	39
+	+	97	43
+	+	97	45
+	+	98	29
+
+> ~/final-nodes/views/edit.handlebars
+	"	7	0
+	^	6	64
+	.	6	63
+	+	1	0
+	+	3	0
+	+	23	0
+	+	6	73
+	+	8	75
+	+	10	83
+	+	12	74
+	+	6	74
+	+	8	76
+	+	10	84
+	+	18	32
+	+	17	47
+	+	18	43
+	+	19	43
+	+	1	16
+	+	22	8
+	+	17	32
+	+	12	63
+	+	10	71
+	+	8	65
+	+	6	63
+
+> ~/final-nodes/views/404page.handlebars
+	"	1	0
+
+> ~/final-nodes/views/500page.handlebars
+	"	3	15
+	^	3	16
+	.	3	15
+	+	3	15
 
 > ~/final-nodes/views/layouts/table.js
 	"	1	0

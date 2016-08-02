@@ -1,0 +1,35 @@
+Mon, 01 Aug 2016 01:29:59 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Mon, 01 Aug 2016 01:30:00 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+events.js:85
+      throw er; // Unhandled 'error' event
+            ^
+Error: listen EADDRINUSE
+    at exports._errnoException (util.js:746:11)
+    at Server._listen2 (net.js:1156:14)
+    at listen (net.js:1182:10)
+    at Server.listen (net.js:1267:5)
+    at EventEmitter.listen (/home/ubuntu/final-nodes/node_modules/express/lib/application.js:617:24)
+    at Object.<anonymous> (/home/ubuntu/final-nodes/final.js:190:5)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #1
+Mon, 01 Aug 2016 01:30:01 GMT express-session deprecated undefined resave option; provide resave option at final.js:21:9
+Mon, 01 Aug 2016 01:30:01 GMT express-session deprecated undefined saveUninitialized option; provide saveUninitialized option at final.js:21:9
+events.js:85
+      throw er; // Unhandled 'error' event
+            ^
+Error: listen EADDRINUSE
+    at exports._errnoException (util.js:746:11)
+    at Server._listen2 (net.js:1156:14)
+    at listen (net.js:1182:10)
+    at Server.listen (net.js:1267:5)
+    at EventEmitter.listen (/home/ubuntu/final-nodes/node_modules/express/lib/application.js:617:24)
+    at Object.<anonymous> (/home/ubuntu/final-nodes/final.js:190:5)
+    at Module._compile (module.js:460:26)
+    at Object.Module._extensions..js (module.js:478:10)
+    at Module.load (module.js:355:32)
+    at Function.Module._load (module.js:310:12)
+error: Forever detected script exited with code: 1
